@@ -1,209 +1,386 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Noah Cenardiere — Ingénieur Systèmes Embarqués &amp; FPGA</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
-  
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Noah Cenardiere — Ingénieur Systèmes Embarqués &amp; FPGA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cursor" id="cursor"></div>
-  
-  <nav>
-    <a href="#hero" class="nav-logo">NC</a>
-    <ul class="nav-links">
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="cursor" id="cursor"></div>
 
-  <section id="hero">
-    <div class="hero-inner">
-      <div>
-        <p class="hero-tag">Disponibilité immédiate · Stage fin d'études</p>
-        <h1>Noah<br><em>CENARDIERE</em></h1>
-        <p class="hero-desc">Ingénieur systèmes embarqués &amp; FPGA, spécialisé en conception VHDL, intégration SoC et développement bas niveau.</p>
-        <a href="#contact" class="hero-cta">Me contacter →</a>
-      </div>
-      <div class="hero-right">
-        <div class="status-badge"><span class="dot"></span>Recherche stage 6 mois</div>
-        <div class="hero-meta">
-          <p>Pessac, France</p>
-          <p><a href="mailto:cenardierenoah232002@gmail.com">cenardierenoah232002@gmail.com</a></p>
-          <p><a href="tel:+33743018338">07 43 01 83 38</a></p>
-          <p><a href="https://www.linkedin.com/in/noah-cenardiere-1b762923b/" target="_blank">LinkedIn ↗</a></p>
+    <nav>
+        <a href="#hero" class="nav-logo">NC</a>
+        <ul class="nav-links">
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <header class="top-header reveal">
+            <p class="hero-tag">Disponibilité immédiate · Stage fin d'études</p>
+            <div class="status-contact-block">
+                <div class="status-badge">
+                    <span class="dot"></span>Recherche stage 6 mois
+                </div>
+                <div class="hero-meta">
+                    <p>Pessac, France</p>
+                    <p><a href="mailto:cenardierenoah232002@gmail.com">cenardierenoah232002@gmail.com</a></p>
+                    <p><a href="tel:+33743018338">07 43 01 83 38</a></p>
+                    <p><a href="https://www.linkedin.com/in/noah-cenardiere-1b762923b/" target="_blank">LinkedIn ↗</a></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero-main">
+            <div class="hero-text-content">
+                <h1 class="reveal">Noah<br><em>Cenardiere</em></h1>
+                <p class="hero-desc reveal">Ingénieur systèmes embarqués &amp; FPGA, spécialisé en conception VHDL, intégration SoC et développement bas niveau.</p>
+                <a href="#contact" class="hero-cta reveal">Me contacter →</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="hero-stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Cibles FPGA — Basys 3, PYNQ-Z1, DE10-Lite</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">Bac+5</span>
+                    <span class="stat-label">Master Systèmes Embarqués</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Projets techniques en cours</span>
+                </div>
+                <div class="hero-keywords">
+                    <span>Embarqué</span><span>FPGA</span><span>ARM</span><span>Linux</span><span>SoC</span><span>C/C++</span><span>Python</span><span>VHDL</span>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section id="skills">
+        <div class="container">
+            <p class="section-label reveal">Savoir-faire</p>
+            <h2 class="reveal">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <h3>FPGA &amp; Hardware</h3>
+                    <p>Conception RTL, simulation et synthèse pour cibles FPGA Xilinx et Intel.</p>
+                    <div class="skill-tags">
+                        <span class="tag">VHDL</span><span class="tag">RTL Design</span><span class="tag">ModelSim</span><span class="tag">Vivado</span><span class="tag">Quartus</span><span class="tag">RISC-V</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Systèmes Embarqués</h3>
+                    <p>Programmation bare-metal, RTOS, microcontrôleurs et Linux embarqué.</p>
+                    <div class="skill-tags">
+                        <span class="tag">ARM Cortex</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span class="tag">RTOS</span><span class="tag">Jetson</span><span class="tag">CUDA</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Langages</h3>
+                    <p>Développement logiciel embarqué et scripting pour automatisation.</p>
+                    <div class="skill-tags">
+                        <span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">NumPy</span><span class="tag">SQL</span><span class="tag">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Protocoles &amp; Bus</h3>
+                    <p>Maîtrise des interfaces de communication hardware et software.</p>
+                    <div class="skill-tags">
+                        <span class="tag">SPI</span><span class="tag">UART</span><span class="tag">I²C</span><span class="tag">CAN</span><span class="tag">APB/AMBA</span><span class="tag">AXI-Stream</span><span class="tag">RS-232</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Vérification &amp; Test</h3>
+                    <p>Méthodologies de simulation et validation de designs numériques complexes.</p>
+                    <div class="skill-tags">
+                        <span class="tag">UVM</span><span class="tag">ModelSim</span><span class="tag">Wireshark</span><span class="tag">CST Studio</span><span class="tag">CEM / EMS</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Linux &amp; Outils</h3>
+                    <p>Environnements de développement bas niveau, compilation croisée et scripting.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Linux Embarqué</span><span class="tag">U-Boot</span><span class="tag">BusyBox</span><span class="tag">GCC ARM</span><span class="tag">Makefile</span><span class="tag">PyVISA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERLAY DÉTAILS PROJET -->
+    <div class="project-overlay" id="projectOverlay" onclick="handleOverlayClick(event)">
+
+    <!-- LIGHTBOX IMAGE -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">✕ Fermer</button>
+        <img id="lightboxImg" src="" alt=""/>
+        <span class="lightbox-caption" id="lightboxCaption"></span>
     </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <p class="section-label reveal">Savoir-faire</p>
-      <h2 class="reveal">Compétences</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3>FPGA &amp; Hardware</h3>
-          <p>Conception RTL, simulation et synthèse pour cibles FPGA Xilinx et Intel.</p>
-          <div class="skill-tags">
-            <span class="tag">VHDL</span><span class="tag">RTL Design</span><span class="tag">ModelSim</span><span class="tag">Vivado</span><span class="tag">Quartus</span><span class="tag">RISC-V</span><span class="tag">UVM</span>
-          </div>
+        <div class="project-panel" id="projectPanel">
+            <div class="panel-close">
+                <button onclick="closeProject()">✕ Fermer</button>
+            </div>
+            <div id="panelContent"></div>
         </div>
-        <div class="skill-card reveal">
-          <h3>Systèmes Embarqués</h3>
-          <p>Programmation bare-metal, RTOS, microcontrôleurs et Linux embarqué.</p>
-          <div class="skill-tags">
-            <span class="tag">ARM Cortex</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span class="tag">RTOS</span><span class="tag">Jetson</span><span class="tag">CUDA</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3>Langages</h3>
-          <p>Développement logiciel embarqué et scripting pour automatisation.</p>
-          <div class="skill-tags">
-            <span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">SQL</span><span class="tag">PHP</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3>Protocoles &amp; Bus</h3>
-          <p>Maîtrise des interfaces de communication hardware et software.</p>
-          <div class="skill-tags">
-            <span class="tag">SPI</span><span class="tag">UART</span><span class="tag">I²C</span><span class="tag">CAN</span><span class="tag">APB/AMBA</span><span class="tag">Modbus</span><span class="tag">TCP/IP</span>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <section id="experience">
-    <div class="container">
-      <p class="section-label reveal">Parcours</p>
-      <h2 class="reveal">Expérience</h2>
-      <div class="exp-list">
-        <div class="exp-item reveal">
-          <div class="exp-date">11/2025 — 02/2026<br>Talence</div>
-          <div class="exp-content">
-            <h3>Traitement d'image sur SoC</h3>
-            <p class="exp-company">Université de Bordeaux / Laboratoire IMS</p>
-            <ul class="exp-bullets">
-              <li>Conception VHDL d'un IP de détection de contours (Filtre de Sobel) pour architecture AXI.</li>
-              <li>Intégration SoC sur carte PYNQ (Zynq-7000) avec configuration des contrôleurs DMA.</li>
-              <li>Développement d'un pilote Python avec NumPy pour la vectorisation des données.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="exp-item reveal">
-          <div class="exp-date">02/2025 — 07/2025<br>Mérignac</div>
-          <div class="exp-content">
-            <h3>Stage développement FPGA — 6 mois</h3>
-            <p class="exp-company">Thales, département HTA/IC</p>
-            <ul class="exp-bullets">
-              <li>Développement VHDL d'un softcore RISC-V pour validation sur cible FPGA.</li>
-              <li>Intégration d'IP internes, approfondissement du bus APB.</li>
-              <li>Conception de testbenchs pour vérification fonctionnelle et analyse de couverture.</li>
-              <li>Optimisation placement-routage et validation physique sur carte d'évaluation.</li>
-              <li>Gestion collaborative du projet avec Git.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="exp-item reveal">
-          <div class="exp-date">12/2023 — 02/2024</div>
-          <div class="exp-content">
-            <h3>Projet d'automatisation Python</h3>
-            <p class="exp-company">Université de Bordeaux / Laboratoire IMS</p>
-            <ul class="exp-bullets">
-              <li>Développement d'une librairie Python complète pour l'automatisation d'un système de brassage.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="exp-item reveal">
-          <div class="exp-date">01/2023 — 03/2023</div>
-          <div class="exp-content">
-            <h3>Projet CEM</h3>
-            <p class="exp-company">Université de Bordeaux / Laboratoire IMS</p>
-            <ul class="exp-bullets">
-              <li>Modélisation 3D d'une chambre de réverbération pour essais CEM et simulations d'ondes planes.</li>
-              <li>Conception d'un environnement de test sur FPGA : IP capteur luxmètre, communication UART.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projects">
+        <div class="container">
+            <p class="section-label reveal">Réalisations</p>
+            <h2 class="reveal">Projets Techniques</h2>
+            <div class="project-grid">
 
-  <section id="formation">
-    <div class="container">
-      <p class="section-label reveal">Académique</p>
-      <h2 class="reveal">Formation</h2>
-      <div class="edu-list">
-        <div class="edu-item reveal">
-          <div class="edu-date">09/2023 — 09/2026</div>
-          <div class="edu-content">
-            <h3>Master — Systèmes Embarqués</h3>
-            <p>Université de Bordeaux / Evering IMA · Maintenance Aéronautique, parcours Systèmes Embarqués</p>
-          </div>
-        </div>
-        <div class="edu-item reveal">
-          <div class="edu-date">09/2019 — 09/2022</div>
-          <div class="edu-content">
-            <h3>Licence EEA</h3>
-            <p>Université de la Réunion · Électronique, Énergie Électrique et Automatique</p>
-          </div>
-        </div>
-        <div class="edu-item reveal">
-          <div class="edu-date">07/2019</div>
-          <div class="edu-content">
-            <h3>Baccalauréat Scientifique</h3>
-            <p>Lycée Bel Air, île de la Réunion</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <!-- Carte 1 : Sobel -->
+                <div class="project-card reveal" onclick="openProject('sobel')">
+                    <div class="project-card-header">
+                        <span class="project-year">2026</span>
+                    </div>
+                    <h3>Accélérateur de traitement d'image — Sobel sur FPGA</h3>
+                    <p class="summary">Conception d'une IP de détection de contours (Sobel) en VHDL sur SoC Zynq-7000. Communication AXI-Stream entre logique programmable et processeur ARM.</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">VHDL</span>
+                        <span class="mini-tag">Zynq-7000</span>
+                        <span class="mini-tag">AXI</span>
+                        <span class="mini-tag">Co-design</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
 
-  <section id="langues">
-    <div class="container">
-      <p class="section-label reveal">Communication</p>
-      <h2 class="reveal">Langues</h2>
-      <div class="lang-row">
-        <div class="lang-item reveal"><h3>Français</h3><p>Langue maternelle — C2</p></div>
-        <div class="lang-item reveal"><h3>Anglais</h3><p>Professionnel — B2</p></div>
-        <div class="lang-item reveal"><h3>Créole Réunionnais</h3><p>Langue maternelle — C2</p></div>
-      </div>
-    </div>
-  </section>
+                <!-- Carte 2 : Driver USB -->
+                <div class="project-card reveal" onclick="openProject('usb')">
+                    <div class="project-card-header">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Pilote de périphérique USB &amp; contrôle LED sur ARM</h3>
+                    <p class="summary">Driver noyau Linux sur mesure pour piloter des LEDs physiques via les interruptions d'une souris USB. Compilation croisée U-Boot + BusyBox sur ARM9.</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">C Kernel</span>
+                        <span class="mini-tag">Linux</span>
+                        <span class="mini-tag">ARM9</span>
+                        <span class="mini-tag">USB HID</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
 
-  <section id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-left reveal">
-          <p class="section-label">Contact</p>
-          <h2>Travaillons<br><em style="font-style:italic;color:var(--accent)">ensemble</em></h2>
-          <p class="desc">Disponible immédiatement pour un stage de fin d'études de 6 mois dans le domaine des systèmes embarqués et FPGA.</p>
-          <div class="contact-links">
-            <a href="mailto:cenardierenoah232002@gmail.com" class="contact-link"><span class="lbl">Email</span><span>cenardierenoah232002@gmail.com</span></a>
-            <a href="tel:+33743018338" class="contact-link"><span class="lbl">Tél</span><span>07 43 01 83 38</span></a>
-            <a href="https://www.linkedin.com/in/noah-cenardiere-1b762923b/" target="_blank" class="contact-link"><span class="lbl">LinkedIn</span><span>noah-cenardiere ↗</span></a>
-          </div>
+                <!-- Carte 3 : RISC-V Thales -->
+                <div class="project-card reveal" onclick="openProject('riscv')">
+                    <div class="project-card-header">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Processeur soft-core RISC-V — Thales AVS</h3>
+                    <p class="summary">Portage et implémentation d'un processeur RV32I (CVE2 → tinyv) en VHDL sur Intel MAX 10. SoC complet avec bus APB, UART, GPIO. Validation par méthodologie UVM.</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">RISC-V RV32I</span>
+                        <span class="mini-tag">VHDL</span>
+                        <span class="mini-tag">Intel MAX 10</span>
+                        <span class="mini-tag">UVM</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+                <!-- Carte 4 : VGA -->
+                <div class="project-card reveal" onclick="openProject('vga')">
+                    <div class="project-card-header">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Contrôleur d'affichage vidéo VGA sur FPGA</h3>
+                    <p class="summary">Contrôleur graphique complet en VHDL pilotant un écran 640×480 @ 60 Hz. Génération nanoseconde des signaux HSync/VSync sur Basys 3 (Artix-7).</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">VHDL</span>
+                        <span class="mini-tag">Artix-7</span>
+                        <span class="mini-tag">VGA 640×480</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+                <!-- Carte 5 : STM32H7 -->
+                <div class="project-card reveal" onclick="openProject('stm32')">
+                    <div class="project-card-header">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Développement Bare-Metal — Dual-Core STM32H7</h3>
+                    <p class="summary">Prise en main complète du STM32H747I-DISCO (M7 @ 480 MHz + M4 @ 240 MHz). Maîtrise de toute la stack : BSP, HAL, CMSIS jusqu'au niveau des registres.</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">C Bare-Metal</span>
+                        <span class="mini-tag">STM32H7</span>
+                        <span class="mini-tag">Dual-Core</span>
+                        <span class="mini-tag">HAL/BSP</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+                <!-- Carte 6 : Arcade -->
+                <div class="project-card reveal" onclick="openProject('arcade')">
+                    <div class="project-card-header">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3>Plateforme de jeux d'arcade multi-jeux</h3>
+                    <p class="summary">Plateforme Java évolutive hébergeant Pong et Space Invaders. Architecture MVC robuste, multithreading et système de High Scores.</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">Java</span>
+                        <span class="mini-tag">MVC</span>
+                        <span class="mini-tag">POO</span>
+                        <span class="mini-tag">Multithreading</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+                <!-- Carte 7 : CEM Brasseur -->
+                <div class="project-card reveal" onclick="openProject('cem')">
+                    <div class="project-card-header">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Automatisation &amp; rétro-ingénierie — Banc de test CEM</h3>
+                    <p class="summary">Développement d'une bibliothèque Python (PyVISA) pour piloter un brasseur de modes en CRBM. Protocole RS-232 intégralement décodé par rétro-ingénierie (Wireshark).</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">Python</span>
+                        <span class="mini-tag">PyVISA</span>
+                        <span class="mini-tag">RS-232</span>
+                        <span class="mini-tag">Rétro-ingénierie</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+                <!-- Carte 8 : EMS FPGA -->
+                <div class="project-card reveal" onclick="openProject('ems')">
+                    <div class="project-card-header">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3>Immunité &amp; susceptibilité EM — FPGA en CRBM</h3>
+                    <p class="summary">Évaluation de la robustesse d'un FPGA Basys 3 face à des agressions EM. Modélisation 3D CST Studio + monitoring VHDL temps réel via capteur Pmod ALS (SPI).</p>
+                    <div class="project-tags">
+                        <span class="mini-tag">VHDL</span>
+                        <span class="mini-tag">CEM/EMS</span>
+                        <span class="mini-tag">CST Studio</span>
+                        <span class="mini-tag">Artix-7</span>
+                    </div>
+                    <span class="project-cta">Voir les détails</span>
+                </div>
+
+            </div><!-- /project-grid -->
         </div>
-        <div class="contact-right reveal">
-          <div class="big-name">Noah<br>Cenardiere</br></div>
+    </section>
+
+    <!-- ===================== FORMATION ===================== -->
+    <section id="formation">
+        <div class="container">
+            <p class="section-label reveal">Académique</p>
+            <h2 class="reveal">Formation</h2>
+            <div class="edu-list">
+                <div class="edu-item reveal">
+                    <div class="edu-date">09/2023 — 09/2026</div>
+                    <div class="edu-content">
+                        <h3>Master — Systèmes Embarqués</h3>
+                        <p>Université de Bordeaux / Evering IMA · Maintenance Aéronautique</p>
+                    </div>
+                </div>
+                <div class="edu-item reveal">
+                    <div class="edu-date">09/2019 — 09/2022</div>
+                    <div class="edu-content">
+                        <h3>Licence EEA</h3>
+                        <p>Université de la Réunion · Électronique, Énergie Électrique et Automatique</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <span>© 2026 Noah Cenardiere</span>
-    <span>Ingénieur Systèmes Embarqués &amp; FPGA · Pessac, France</span>
-  </footer>
+    <!-- ===================== LANGUES ===================== -->
+    <section id="langues">
+        <div class="container">
+            <p class="section-label reveal">Communication</p>
+            <h2 class="reveal">Langues</h2>
+            <div class="lang-grid">
+                <div class="lang-card reveal">
+                    <div class="lang-card-top">
+                        <h3>Français</h3>
+                        <span class="lang-level">C2</span>
+                    </div>
+                    <p>Langue maternelle</p>
+                    <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                </div>
+                <div class="lang-card reveal">
+                    <div class="lang-card-top">
+                        <h3>Anglais</h3>
+                        <span class="lang-level">B2</span>
+                    </div>
+                    <p>Professionnel</p>
+                    <div class="lang-bar"><div class="lang-fill" style="width:67%"></div></div>
+                </div>
+                <div class="lang-card reveal">
+                    <div class="lang-card-top">
+                        <h3>Créole Réunionnais</h3>
+                        <span class="lang-level">C2</span>
+                    </div>
+                    <p>Langue maternelle</p>
+                    <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left reveal">
+                    <p class="section-label">Contact</p>
+                    <h2>Travaillons<br><em style="font-style:italic;color:var(--accent)">ensemble</em></h2>
+                    <p class="desc">Disponible immédiatement pour un stage de fin d'études de 6 mois dans le domaine des systèmes embarqués, FPGA ou électronique numérique.</p>
+                    <div class="contact-links">
+                        <a href="mailto:cenardierenoah232002@gmail.com" class="contact-link">
+                            <span class="lbl">Email</span>
+                            <span>cenardierenoah232002@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/noah-cenardiere-1b762923b/" target="_blank" class="contact-link">
+                            <span class="lbl">LinkedIn</span>
+                            <span>noah-cenardiere ↗</span>
+                        </a>
+                        <a href="tel:+33743018338" class="contact-link">
+                            <span class="lbl">Téléphone</span>
+                            <span>07 43 01 83 38</span>
+                        </a>
+                        <div class="contact-link contact-location">
+                            <span class="lbl">Localisation</span>
+                            <span>Pessac, France — mobilité nationale</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right reveal">
+                    <div class="contact-deco">
+                        <div class="big-name">Noah<br>Cenardiere</div>
+                        <div class="contact-dispo">
+                            <span class="dot"></span>
+                            <span>Disponible dès maintenant</span>
+                        </div>
+                        <div class="contact-tags">
+                            <span>Systèmes Embarqués</span>
+                            <span>FPGA / VHDL</span>
+                            <span>Bas Niveau</span>
+                            <span>Co-design HW/SW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2026 Noah Cenardiere</span>
+        <span>Ingénieur Systèmes Embarqués &amp; FPGA · Pessac, France</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
