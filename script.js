@@ -264,6 +264,11 @@ function handleOverlayClick(e) {
   if (e.target === document.getElementById('projectOverlay')) closeProject();
 }
 
+// ── Accordion cibles matérielles ─────────────────────────────────
+function toggleTargets() {
+  document.getElementById('targetsBlock').classList.toggle('open');
+}
+
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     if (document.getElementById('lightbox').classList.contains('open')) {
