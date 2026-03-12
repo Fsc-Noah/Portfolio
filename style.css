@@ -84,7 +84,7 @@ h2 {
 /* --- SECTION HERO (MISE EN PAGE ET AJUSTEMENT HAUTEUR) --- */
 #hero { 
     min-height: 100vh; 
-    padding-top: 8rem; 
+    padding-top: 5rem; 
     display: flex; 
     flex-direction: column; 
     border-bottom: 1px solid var(--line); 
@@ -95,7 +95,7 @@ h2 {
     justify-content: space-between; 
     align-items: flex-start; 
     width: 100%; 
-    margin-bottom: 4rem; 
+    margin-bottom: 2rem; 
 }
 
 .hero-tag { 
@@ -142,7 +142,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    margin-top: -4rem;
+    margin-top: 0;
 }
 
 .hero-text-content { flex: 1; }
@@ -188,6 +188,94 @@ h2 {
     padding: 0.2rem 0.55rem;
     border: 1px solid var(--line);
     color: var(--muted);
+}
+
+/* --- TARGETS BLOCK --- */
+.hero-stat--targets {
+    padding: 1.4rem 1.8rem;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    cursor: pointer;
+    user-select: none;
+}
+.targets-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.targets-header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+.targets-header-right .stat-label {
+    line-height: 1;
+}
+.targets-toggle-hint {
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.hero-stat--targets:hover .targets-toggle-hint {
+    opacity: 1;
+}
+.targets-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.hero-stat--targets.open .targets-arrow {
+    transform: rotate(180deg);
+}
+.targets-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+.hero-stat--targets.open .targets-grid {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+.target-family {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+}
+.target-family-label {
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    font-weight: 500;
+    width: 2.8rem;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+.target-chip {
+    font-size: 0.58rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.45rem;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    background: var(--bg);
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s;
+}
+.target-chip:hover {
+    border-color: var(--accent);
+    color: var(--ink);
 }
 
 h1 { 
