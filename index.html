@@ -28,8 +28,8 @@
             <p class="hero-tag">Disponibilité immédiate · Stage fin d'études</p>
             <div class="status-contact-block">
                 <div class="status-badge">
-                    <span class="dot"></span>Recherche stage 6 mois
-                </div>
+                    <span class="dot"></span>Recherche stage de 4 à 6 mois
+                </div>  
                 <div class="hero-meta">
                     <p>Pessac, France</p>
                     <p><a href="mailto:cenardierenoah232002@gmail.com">cenardierenoah232002@gmail.com</a></p>
@@ -46,9 +46,35 @@
                 <a href="#contact" class="hero-cta reveal">Me contacter →</a>
             </div>
             <div class="hero-stats reveal">
-                <div class="hero-stat">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Cibles FPGA — Basys 3, PYNQ-Z1, DE10-Lite</span>
+                <div class="hero-stat hero-stat--targets" id="targetsBlock" onclick="toggleTargets()">
+                    <div class="targets-header">
+                        <span class="stat-number">10+</span>
+                        <div class="targets-header-right">
+                            <span class="stat-label">Cibles matérielles</span>
+                            <span class="targets-toggle-hint">Voir les cibles <span class="targets-arrow">↓</span></span>
+                        </div>
+                    </div>
+                    <div class="targets-grid" id="targetsGrid">
+                        <div class="target-family">
+                            <span class="target-family-label">FPGA</span>
+                            <span class="target-chip">Basys 3</span>
+                            <span class="target-chip">PYNQ-Z1</span>
+                            <span class="target-chip">DE10-Lite</span>
+                            <span class="target-chip">DE2 · Cyclone II</span>
+                        </div>
+                        <div class="target-family">
+                            <span class="target-family-label">MCU</span>
+                            <span class="target-chip">STM32H747I</span>
+                            <span class="target-chip">ATmega328P</span>
+                            <span class="target-chip">Arduino Uno</span>
+                        </div>
+                        <div class="target-family">
+                            <span class="target-family-label">SBC / GPU</span>
+                            <span class="target-chip">Raspberry Pi</span>
+                            <span class="target-chip">Jetson · CUDA</span>
+                            <span class="target-chip">ARM9 · SAM9</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-stat">
                     <span class="stat-number">Bac+5</span>
@@ -59,7 +85,7 @@
                     <span class="stat-label">Projets techniques en cours</span>
                 </div>
                 <div class="hero-keywords">
-                    <span>Embarqué</span><span>FPGA</span><span>ARM</span><span>Linux</span><span>SoC</span><span>C/C++</span><span>Python</span><span>VHDL</span>
+                    <span>Embarqué</span><span>Linux</span><span>Temps réel</span><span>Software</span><span>Bare-Metal</span><span>Signal</span><span>Hardware</span><span>Firmware</span><span>Protocoles</span><span>Automatisme</span>
                 </div>
             </div>
         </div>
@@ -398,9 +424,8 @@
                         </div>
                         <div class="contact-tags">
                             <span>Systèmes Embarqués</span>
-                            <span>FPGA / VHDL</span>
-                            <span>Bas Niveau</span>
-                            <span>Co-design HW/SW</span>
+                            <span>HARDWARE</span>
+                            <span>SOFTWARE</span>
                         </div>
                     </div>
                 </div>
