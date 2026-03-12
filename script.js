@@ -123,6 +123,22 @@ const projects = {
     outcomes: ['Architecture MVC réutilisable', '2 jeux complets avec High Score', 'Design Patterns appliqués']
   },
 
+  imageprocessing: {
+    year: '2024',
+    context: 'Outils : C++, OpenCV &nbsp;·&nbsp; Vision industrielle, POO',
+    title: "Traitement d'images pour contrôle de pièces en bois — C++ & OpenCV",
+    desc: "Développement d'une application C++ de traitement vidéo en temps réel pour analyser des pièces en bois sur tapis roulant. L'architecture repose sur une classe abstraite filtre avec fonctions virtuelles pures, dont héritent 13 filtres spécialisés. Ce projet illustre concrètement l'héritage, le polymorphisme et les classes abstraites en C++, tout en exploitant la bibliothèque OpenCV pour des traitements avancés.",
+    details: [
+      { label: 'Architecture POO — Héritage & Polymorphisme', text: "Classe abstraite filtre définissant l'interface commune (méthode virtuelle pure traitement()). Chaque filtre (bleu, rouge, vert, gaussien, Sobel, Laplacien, seuillage, cropping, plage, inertie, inertie axis, détection de contours, finding) hérite de cette classe. Appel polymorphique dans une boucle unique sur un vector<filtre*>, sans conditionnel." },
+      { label: '13 Filtres OpenCV implémentés', text: "Filtres couleur RGB (manipulation directe des pixels Mat). Flou gaussien (GaussianBlur), gradients Sobel et Laplacien pour la détection de contours. Seuillage binaire (cvtColor + threshold). Cropping par ROI (Rect). Filtre de plage HSV (inRange + bitwise_and). Détection du centre d'inertie par moments OpenCV. Détection de contours par algorithme de Canny (findContours + drawContours)." }
+    ],
+    images: [
+      { src: 'assets/Cpp_exemple_filtre.png',         caption: 'Exemple — résultat du filtre bleu sur vidéo' },
+      { src: 'assets/Cpp_terminal_select_filtre.png', caption: 'Terminal — sélection interactive du filtre' }
+    ],
+    outcomes: ['13 filtres OpenCV polymorphiques', 'Architecture extensible sans modification du main', 'Traitement vidéo temps réel sur tapis roulant']
+  },
+
   cem: {
     year: '2024',
     context: 'Contexte : Projet M1 IMSAT &nbsp;·&nbsp; Python (PyVISA, PySerial), RS-232',
@@ -141,7 +157,7 @@ const projects = {
   },
 
   ems: {
-    year: '2024',
+    year: '2023',
     context: 'Cible : Basys 3 (Artix-7) &nbsp;·&nbsp; CST Studio Suite, Chambre Siepel Eole 1000, Analyseur de spectre, Pmod ALS',
     title: "Immunité & susceptibilité électromagnétique — FPGA en CRBM",
     desc: "Évaluation de la robustesse d'un système numérique face à des agressions électromagnétiques en milieu saturé. L'étude combine une modélisation physique complexe (75 %) et le développement d'une architecture de monitoring en VHDL sur FPGA (25 %) pour détecter en temps réel les erreurs induites par le champ électrique.",
@@ -156,6 +172,23 @@ const projects = {
       { src: 'assets/Sim_3D_CRBM.png',    caption: 'Simulation — champ électrique (CST)' }
     ],
     outcomes: ['Cartographie des fréquences critiques FPGA', 'Corrélation simulation CST / mesures réelles', 'Monitoring VHDL temps réel']
+  },
+
+  ascenseur: {
+    year: '2021',
+    context: "Cible : Arduino UNO &nbsp;·&nbsp; C, Automatisme, Machine d'état",
+    title: "Commande d'ascenseur didactique — Arduino",
+    desc: "Mise en place de la commande d'un ascenseur didactique TERGANE 40300 à 2 étages, modélisé sous forme de machine d'état et implémenté sur carte Arduino. Le projet couvre l'état des lieux complet des entrées/sorties, la vérification de compatibilité matérielle, puis le développement progressif jusqu'à un automate complet gérant montée, descente, éclairage, témoins d'étage et arrêt d'urgence.",
+    details: [
+      { label: 'Cahier des charges & I/O', text: "Inventaire exhaustif du système : 2 boutons d'appel, 2 contacteurs de position, 1 capteur de fermeture de porte, 1 bouton d'arrêt d'urgence côté entrées ; moteur montée, moteur descente, éclairage cabine et 2 témoins d'étage côté sorties. Vérification pin par pin de la compatibilité avec la carte Arduino." },
+      { label: "Machine d'état — 4 états", text: "Conception d'un organigramme à 4 états (Étage 1 au repos, Montée, Étage 2 au repos, Descente) avec transitions conditionnées par les boutons, les contacteurs de position et le capteur de porte. Éclairage activé lors des déplacements. Implémentation via switch/case en C pour un code lisible et extensible." }
+    ],
+    images: [
+      { src: 'assets/cablage_arduino_ascencor.png',     caption: 'Câblage Arduino — panneau de commande TERGANE' },
+      { src: 'assets/Ascenseur_miniaturuse.png',         caption: 'Ascenseur didactique miniaturisé' },
+      { src: 'assets/Extrait_code_arduino_ascencor.png', caption: "Extrait du code Arduino — machine d'état" }
+    ],
+    outcomes: ["Machine d'état 4 états fonctionnelle", 'Gestion sécurités (porte, urgence)', 'Validation hardware complète Arduino']
   }
 
 };
